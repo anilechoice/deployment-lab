@@ -9,5 +9,38 @@
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
+    <h1>Payment Form</h1>
+        <form action="payment">
+            <fieldset>
+                <legend>Contact Infomation</legend>
+                <label for="Mr."> Mr. </label>
+                <input type="radio" name="prefix" id="mr.prefix">
+                <label for="Ms."> Ms. </label>
+                <input type="radio" name="prefix" id="ms.prefix">
+                <label for="Mrs."> Mrs. </label>
+                <input type="radio" name="prefix" id="mrs.prefix">
+                <label for="Mx."> Mx. </label>
+                <input type="radio" name="prefix"
+                id="mx.prefix">
+                <label for="name"> Name </label>
+                <input type="text" name="name" id="name">
+                <label for="email"> Email </label>
+                <input type="text" name="email" id="email">
+            </fieldset>
+            <fieldset>
+                <legend>Credit Card Information</legend>
+                <select name="card-info" id="card-info">
+                    <option value="visa">Visa</option>
+                    <option value="amex">American Express</option>
+                    <option value="mastercard">Master Card</option>
+                    <option value="discover">Discover</option>
+                   </select>
+                   <label for="card-number">Credit Card Number</label>
+                   <input type="number" placeholder="xxxx xxxx xxxx xxxx" required>
+                   <label for="expiration-date"> Expiration Date</label>
+                   <input type="text" name="expiration-date" required>
+            </fieldset>
+           <input type="submit" value="Submit Payment">
+        </form>
   </body>
 </html>
